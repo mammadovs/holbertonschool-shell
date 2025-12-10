@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo sh -c '[ "$(stat -c %U hello)" = "guillaume" ] && chown vincent hello'
+ls -l hello | grep " guillaume " > /dev/null && sudo chown vincent hello
